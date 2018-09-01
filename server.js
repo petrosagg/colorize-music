@@ -4,7 +4,7 @@ require('./rpi-ws291x.js')
 
 const app = express()
 
-app.get(
+app.post(
   '/color',
   bodyParser.urlencoded({ extended: true }),
   bodyParser.json(),
