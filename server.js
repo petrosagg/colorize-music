@@ -4,6 +4,8 @@ const setColor = require('./rpi-ws291x.js')
 
 const app = express()
 
+app.use(express.static('dist'))
+
 app.post(
   '/color',
   bodyParser.urlencoded({ extended: true }),
