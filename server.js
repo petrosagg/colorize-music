@@ -10,10 +10,8 @@ app.post(
   '/color',
   bodyParser.urlencoded({ extended: true }),
   bodyParser.json(),
-	(req, res, next) => {
+  (req, res) => {
     setColor(req.body.color)
-  },
-  function(req, res) {
     res.json({})
   }
 )
