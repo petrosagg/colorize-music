@@ -1,8 +1,8 @@
 var ws281x = require('rpi-ws281x-native/');
 
 module.exports = function setColor(color) {
-  var NUM_LEDS = parseInt(process.argv[2], 10) || 10,
-    pixelData = new Uint32Array(NUM_LEDS);
+  var NUM_LEDS = 60,
+  pixelData = new Uint32Array(NUM_LEDS);
 
   ws281x.init(NUM_LEDS);
 
