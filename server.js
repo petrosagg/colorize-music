@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-require('./rpi-ws291x.js')
+const setColor = require('./rpi-ws291x.js')
 
 const app = express()
 
